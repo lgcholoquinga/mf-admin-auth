@@ -5,9 +5,6 @@ import { RouterOutlet } from '@angular/router';
 	selector: 'auth-root',
 	standalone: true,
 	imports: [RouterOutlet],
-	templateUrl: './app.component.html',
-	styleUrl: './app.component.scss',
+	template: `<router-outlet />`,
 })
-export class AppComponent {
-	title = 'mf-admin-auth';
-}
+export class AppComponent {}

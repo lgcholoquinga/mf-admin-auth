@@ -4,7 +4,7 @@ module.exports = withNativeFederation({
 	name: 'mf-admin-auth',
 
 	exposes: {
-		'./Component': './src/app/app.component.ts',
+		'./routes': './src/app/app.routes.ts',
 	},
 
 	shared: {
