@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "auth",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -95,8 +95,23 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a0531ce4-41c3-4c22-9f9f-9173afb8c6c6",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
